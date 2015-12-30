@@ -74,7 +74,7 @@
     position: relative;
     height: 128px;
     width: 1004px;
-    margin: 0 auto;
+    margin: 0 auto 19px;
     padding: 39px 38px 0;
     border-radius: 0 0 10px 10px;
     border: 1px solid #000;
@@ -177,7 +177,20 @@
 /* --------------- /club --------------- *//* --------------- /header --------------- */
 
 /* --------------- stock --------------- */
-.stock{
-
+.stock li{
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #ec774b;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+}
+.stock li+li{
+    background-color: #edbf47;
+}
+.stock li+li+li{
+    background-color: #6fc191;
 }
 /* --------------- /stock --------------- */
