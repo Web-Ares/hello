@@ -333,6 +333,51 @@
 }
 /* --------------- /answers --------------- */
 
+/* --------------- slider --------------- */
+.slider {
+    display: block;
+    position: relative;
+    height: 182px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #495052;
+    border-radius:10px;
+    padding-top: 23px;
+}
+.slider__wrap{
+    overflow: hidden;
+    width:835px;
+    padding-left: 10px;
+}
+.slider_prev {
+    left: 30px;
+}
+.slider_next, .slider_prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    width: 22px;
+    height: 42px;
+    background: url("../img/slider-left.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.slider__layout{
+    border-radius:3px;
+    overflow: hidden;
+    width: 190px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider_next {
+    background: url("../img/slider-right.png") no-repeat center;
+    background-size: contain;
+    right: 30px;
+}
+/* --------------- /slider --------------- */
+
 /* --------------- garden --------------- */
 h3{
     font-size: 18px;
