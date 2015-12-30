@@ -74,6 +74,11 @@
     line-height: 68px;
     background: none!important;
 }
+.site__title img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -2%;
+}
 .site a{
     color: #495052;
 }
@@ -121,7 +126,7 @@
 }
 .site__footer-title{
     display: block;
-    font: 48px "appetite_new", sans-serif;
+    font: 48px/48px "appetite_new", sans-serif;
 }
 /* --------------- /site --------------- */
 
@@ -141,6 +146,14 @@
     font: 36px 'appetite_new', sans-serif;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- copyright --------------- */
+.copyright{
+    display: block;
+    margin-top: 59px;
+    font-size: 14px;
+}
+/* --------------- copyright --------------- */
 
 /* --------------- header --------------- */
 .header__address{
@@ -290,6 +303,36 @@
 }
 /* --------------- /application --------------- */
 
+/* --------------- answers --------------- */
+.answers{
+    margin-bottom: 9px;
+    text-align: center;
+}
+.answers ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 358px;
+    padding-top: 34px;
+}
+.answers ul+ul{
+    width: 407px;
+    margin-left: 21px;
+}
+.answers li{
+    margin-bottom: 21px;
+    padding-left: 47px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 18px;
+    background: url("../img/icons-list.png") no-repeat 0 0;
+    text-align: left;
+}
+.answers ul+ul li{
+    margin-bottom: 16px;
+}
+/* --------------- /answers --------------- */
+
 /* --------------- garden --------------- */
 h3{
     font-size: 18px;
@@ -322,7 +365,7 @@ h3{
 /* --------------- club --------------- */
 .club{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .club ul li{
