@@ -22,7 +22,7 @@ var Slider = function (obj) {
         var _slider = new Swiper(_obj, {
             nextButton: '.slider_next',
             prevButton: '.slider_prev',
-            spaceBetween: 0,
+            spaceBetween: 21,
             loop: false,
             slidesPerView: 4
 
