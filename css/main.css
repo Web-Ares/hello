@@ -162,26 +162,13 @@
 }
 /* --------------- /header --------------- */
 
-/* --------------- garden --------------- */
-.garden{
-    position: relative;
-    margin-bottom: 30px;
-}
-/* --------------- /garden --------------- */
-
-/* --------------- club --------------- */
-.club{
-    position: relative;
-    margin-bottom: 30px;
-}
-/* --------------- /club --------------- *//* --------------- /header --------------- */
-
 /* --------------- stock --------------- */
 .stock li{
     position: relative;
     display: inline-block;
     width: 326px;
     height: 169px;
+    padding: 34px 30px 0;
     border-radius: 10px;
     background-color: #ec774b;
     font-weight: 700;
@@ -206,3 +193,17 @@
     background-color: #fff;
 }
 /* --------------- /stock --------------- */
+
+/* --------------- garden --------------- */
+.garden{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* --------------- /garden --------------- */
+
+/* --------------- club --------------- */
+.club{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* --------------- /club --------------- */
