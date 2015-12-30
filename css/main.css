@@ -131,6 +131,9 @@
     padding-left: 39px;
     font-style: normal;
 }
+.header__address a{
+    cursor: default;
+}
 .header__address:before{
     content: '';
     position: absolute;
@@ -146,16 +149,16 @@
     right: 39px;
     font-size: 24px;
     font-weight: 700;
-    cursor: pointer;
+    cursor: default;
 }
 .header__phone:before{
     content: '';
     position: absolute;
-    left: 0;
+    left: -46px;
     top: -1px;
-    width: 24px;
-    height: 32px;
-    background: url("../img/icons-header.png") no-repeat -4px 0;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icons-header.png") no-repeat 0 -43px;
 }
 /* --------------- /header --------------- */
 
@@ -171,4 +174,10 @@
     position: relative;
     margin-bottom: 30px;
 }
-/* --------------- /club --------------- */
+/* --------------- /club --------------- *//* --------------- /header --------------- */
+
+/* --------------- stock --------------- */
+.stock{
+
+}
+/* --------------- /stock --------------- */
