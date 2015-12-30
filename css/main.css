@@ -61,6 +61,8 @@
 }
 .site__content {
     position: relative;
+    width: 1004px;
+    margin: 0 auto;
     z-index: 2;
 }
 .site__header {
