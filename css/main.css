@@ -49,6 +49,11 @@
     color: #495052;
     z-index: 1;
 }
+.site__title{
+    font-family: 'appetite_new', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
 .site a{
     color: #495052;
 }
@@ -153,3 +158,17 @@
     background: url("../img/icons-header.png") no-repeat -4px 0;
 }
 /* --------------- /header --------------- */
+
+/* --------------- garden --------------- */
+.garden{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* --------------- /garden --------------- */
+
+/* --------------- club --------------- */
+.club{
+    position: relative;
+    margin-bottom: 30px;
+}
+/* --------------- /club --------------- */
