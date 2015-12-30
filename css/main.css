@@ -5,7 +5,7 @@
 
 /*
     main styles
-    version: 15.01.2013
+    version: 30.12.2015
 
     placeholder
 
@@ -30,8 +30,8 @@
 
 /* --------------- fonts --------------- */
 @font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
+    font-family: "appetite_new";
+    src: url("../fonts/appetite_new.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -39,18 +39,24 @@
 
 /* --------------- site --------------- */
 .site {
-    min-height: 100%;
-    min-width: 1000px;
-    overflow: hidden;
     position: relative;
+    min-height: 100%;
+    min-width: 1004px;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/bg-header.jpg") no-repeat 50% 0, url("../img/bg-footer.jpg") no-repeat 50% 100%;
+    background-size: 100% auto;
+    color: #495052;
     z-index: 1;
+}
+.site a{
+    color: #495052;
 }
 .site:after {
     content: '';
     display: block;
     clear: both;
     width: 100%;
-
     height: 100px;
 }
 .site__content {
@@ -59,11 +65,18 @@
 }
 .site__header {
     position: relative;
-
-    height: 100px;
-    background: red;
+    height: 128px;
+    width: 1004px;
+    margin: 0 auto;
+    padding: 39px 38px 0;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #000;
+    border-top: none;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
     z-index: 3;
-
 }
 .site__footer {
     z-index: 2;
@@ -71,20 +84,70 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 200px;
+    text-align: center;
 }
 .site__footer-layout {
-    width: 100%;
-
-    height: 100px;
-    background: blue;
+    width: 1004px;
+    margin: 0 auto;
+    height: inherit;
+}
+.site__footer-title{
+    display: block;
+    font: 48px "appetite_new", sans-serif;
 }
 /* --------------- /site --------------- */
 
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 35px;
+    width: 290px;
+    color: #495052;
+    font-weight: 200;
+}
+.logo span{
+    display: block;
+    margin-left: -4px;
+    margin-bottom: 1px;
+    font: 36px 'appetite_new', sans-serif;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- header --------------- */
+.header__address{
+    position: absolute;
+    top: 36px;
+    left: 354px;
+    width: 358px;
+    padding-left: 39px;
+    font-style: normal;
+}
+.header__address:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 24px;
+    height: 32px;
+    background: url("../img/icons-header.png") no-repeat -4px 0;
+}
+.header__phone{
+    position: absolute;
+    top: 57px;
+    right: 39px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.header__phone:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 24px;
+    height: 32px;
+    background: url("../img/icons-header.png") no-repeat -4px 0;
+}
+/* --------------- /header --------------- */
