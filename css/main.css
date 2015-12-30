@@ -178,19 +178,31 @@
 
 /* --------------- stock --------------- */
 .stock li{
+    position: relative;
     display: inline-block;
-    margin-left: 10px;
+    width: 326px;
+    height: 169px;
     border-radius: 10px;
     background-color: #ec774b;
     font-weight: 700;
     line-height: 24px;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 .stock li+li{
+    margin-left: 8px;
     background-color: #edbf47;
 }
 .stock li+li+li{
     background-color: #6fc191;
+}
+.stock li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #495052;
+    font-weight: 700;
+    background-color: #fff;
 }
 /* --------------- /stock --------------- */
