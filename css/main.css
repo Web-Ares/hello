@@ -18,13 +18,30 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #000;
+    color: #495052;
+    -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
-    color: #000;
+    color: #495052;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
 .placeholder {
-    color: #000;
+    color: #495052;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+:focus::-moz-placeholder {
+    color: transparent
+}
+:focus:-moz-placeholder {
+    color: transparent
+}
+:focus:-ms-input-placeholder {
+    color: transparent
 }
 /* --------------- /placeholder --------------- */
 
@@ -62,7 +79,7 @@
     display: block;
     clear: both;
     width: 100%;
-    height: 100px;
+    height: 200px;
 }
 .site__content {
     position: relative;
@@ -163,6 +180,9 @@
 /* --------------- /header --------------- */
 
 /* --------------- stock --------------- */
+.stock{
+    margin-bottom: 41px;
+}
 .stock li{
     position: relative;
     display: inline-block;
@@ -179,6 +199,7 @@
 }
 .stock li+li{
     margin-left: 8px;
+    padding-top: 41px;
     background-color: #edbf47;
 }
 .stock li+li+li{
@@ -188,11 +209,83 @@
     position: absolute;
     top: 0;
     right: 0;
+    padding: 2px 23px 4px;
     color: #495052;
+    font-size: 18px;
     font-weight: 700;
     background-color: #fff;
 }
+.stock li span:after {
+    left: 0;
+    top: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(236, 119, 75, 0);
+    border-left-color: #ec774b;
+    border-width: 15px;
+}
+.stock li+li span:after{
+    border-left-color: #edbf47;
+}
+.stock li+li+li span:after{
+    border-left-color: #6fc191;
+}
 /* --------------- /stock --------------- */
+
+/* --------------- application --------------- */
+.application{
+    margin-bottom: 28px;
+    text-align: center;
+}
+.application span{
+    display: block;
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.application input,
+.application button{
+    width: 285px;
+    height: 58px;
+    margin-left: 10px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.application input{
+    padding: 0 25px;
+    border: 1px solid #495052;
+    font: 18px 'Open Sans', sans-serif;
+}
+.application button{
+    position: relative;
+    margin-left: 11px;
+    padding-left: 20px;
+    border: none;
+    background-color:#74cee4;
+    font: 25px 'appetite_new', sans-serif;
+    text-align: left;
+    color: #fff;
+}
+.application button:after{
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    width: 44px;
+    height: 26px;
+    background-image: url("../img/icons-button.png");
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+}
+.application button:hover:after{
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+}
+/* --------------- /application --------------- */
 
 /* --------------- garden --------------- */
 .garden{
