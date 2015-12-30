@@ -70,6 +70,7 @@
     font-family: 'appetite_new', sans-serif;
     font-size: 30px;
     text-align: center;
+    background: none!important;
 }
 .site a{
     color: #495052;
