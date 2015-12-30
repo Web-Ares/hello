@@ -67,9 +67,11 @@
     z-index: 1;
 }
 .site__title{
+    position: relative;
     font-family: 'appetite_new', sans-serif;
     font-size: 30px;
     text-align: center;
+    line-height: 68px;
 }
 .site a{
     color: #495052;
@@ -288,9 +290,31 @@
 /* --------------- /application --------------- */
 
 /* --------------- garden --------------- */
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
 .garden{
     position: relative;
     margin-bottom: 30px;
+    text-align: center;
+}
+.garden__item{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+.garden__item:last-child{
+    width: 39%;
+}
+.garden_title:before{
+    content: "";
+    width: 59px;
+    height: 64px;
+    position: absolute;
+    background: url("../img/site-title-icon2.png") no-repeat center;
+    background-size: contain;
 }
 /* --------------- /garden --------------- */
 
@@ -298,5 +322,28 @@
 .club{
     position: relative;
     margin-bottom: 30px;
+    text-align: center;
+}
+.club ul li{
+    font-size:18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.club ul li span{
+    display: block;
+}
+.club_title:before{
+    content: "";
+    width: 59px;
+    height: 64px;
+    position: absolute;
+    background: url("../img/site-title-icon1.png") no-repeat center;
+    background-size: contain;
+}
+.club__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
 }
 /* --------------- /club --------------- */
