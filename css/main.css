@@ -174,7 +174,7 @@
     top: -1px;
     width: 24px;
     height: 32px;
-    background: url("../img/icons-header.png") no-repeat -4px 0;
+    background: url("../img/icons-header.png") no-repeat -3px 0;
 }
 .header__phone{
     position: absolute;
@@ -376,6 +376,14 @@
     background-size: contain;
     right: 29px;
 }
+.slider_prev:hover{
+    transform: translateX(-1px);
+    -webkit-transform: translateX(-1px);
+}
+.slider_next:hover{
+    transform: translateX(1px);
+    -webkit-transform: translateX(1px);
+}
 /* --------------- /slider --------------- */
 
 /* --------------- garden --------------- */
@@ -387,6 +395,9 @@ h3{
     position: relative;
     margin-bottom: 30px;
     text-align: center;
+}
+.garden span{
+    font-weight: 100;
 }
 .garden__item{
     width: 31.5%;
@@ -416,13 +427,19 @@ h3{
     text-align: center;
 }
 .club ul{
+    font-weight: 100;
     padding-top: 9px;
 }
 .club ul li{
     font-size:18px;
     margin-bottom: 6px;
-    font-weight: 400;
     line-height: 24px;
+}
+.club ul li:before{
+    content: "•";
+    position: relative;
+    list-style-position: inside;
+    padding-right: 5px;
 }
 .club ul li span{
     display: block;
